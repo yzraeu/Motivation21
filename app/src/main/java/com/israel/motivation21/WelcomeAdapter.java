@@ -3,6 +3,7 @@ package com.israel.motivation21;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.support.v4.view.PagerAdapter;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,7 @@ import android.widget.TextView;
 public class WelcomeAdapter extends PagerAdapter {
 
     private Context context;
+    private final int pageCount = 7;
     private int[] images;
     private int[] titles;
     private int[] tips;
@@ -35,7 +37,7 @@ public class WelcomeAdapter extends PagerAdapter {
 
     @Override
     public int getCount() {
-        return images.length;
+        return pageCount;
     }
 
     @Override
@@ -45,8 +47,32 @@ public class WelcomeAdapter extends PagerAdapter {
 
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
+        Log.i("Event","instantiateItem");
+        View v = null;
+        if (position == 0)
+            v = showWelcomePage(container);
+        else if (position > 0 && position < 6)
+            v = tipPage(container, position - 1);
+        else if (position == 6)
+            v = showFinalStep(container);
+
+        return v;
+    }
+
+    private View showFinalStep(ViewGroup container) {
+        LayoutInflater li = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View v = li.inflate(R.layout.last_page, null);
+        Log.i("Inflate","last_page");
+
+        container.addView(v);
+
+        return v;
+    }
+
+    private View tipPage(ViewGroup container, int position) {
         LayoutInflater li = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View v = li.inflate(R.layout.tip_page_layout, null);
+        Log.i("Inflate","tip_page_layout");
 
         CharSequence title = getResourceText(titles[position]);
         CharSequence tip = getResourceText(tips[position]);
@@ -72,6 +98,16 @@ public class WelcomeAdapter extends PagerAdapter {
 
         return v;
     }
+
+    private View showWelcomePage(ViewGroup container) {
+        LayoutInflater li = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View v = li.inflate(R.layout.first_page, null);
+        Log.i("Inflate","first_page");
+        container.addView(v);
+
+        return v;
+    }
+
 
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {

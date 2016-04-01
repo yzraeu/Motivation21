@@ -18,11 +18,7 @@
     </FrameLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="25sp"
-        android:padding="16dp">
+        style="@style/tip_parent">
 
         <TextView
             android:id="@+id/title_view"
@@ -40,19 +36,13 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="47sp"
-        android:layout_alignParentBottom="true"
-        android:padding="16dp">
+        style="@style/phrase_parent">
 
         <TextView
             android:id="@+id/phrase_view"
             style="@style/phrase"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/author_view"
