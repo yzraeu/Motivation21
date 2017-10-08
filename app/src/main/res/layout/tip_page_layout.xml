@@ -7,8 +7,8 @@
         android:id="@+id/back_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/image_descrition"/>
+        android:contentDescription="@string/image_descrition"
+        android:scaleType="centerCrop" />
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -17,39 +17,44 @@
 
     </FrameLayout>
 
-    <LinearLayout
-        style="@style/tip_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/status_bar_height"
+        android:layout_marginBottom="@dimen/navigation_bar_height">
 
-        <TextView
-            android:id="@+id/title_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/title"
-            android:textStyle="bold" />
+        <LinearLayout style="@style/tip_parent">
 
-        <TextView
-            android:id="@+id/tip_view"
-            style="@style/tip"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/title_view"
+                style="@style/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tip_view"
+                style="@style/tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-    <LinearLayout
-        style="@style/phrase_parent">
+        </LinearLayout>
 
-        <TextView
-            android:id="@+id/phrase_view"
-            style="@style/phrase"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <LinearLayout style="@style/phrase_parent">
 
-        <TextView
-            android:id="@+id/author_view"
-            style="@style/author"
-            android:layout_gravity="end"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/phrase_view"
+                style="@style/phrase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/author_view"
+                style="@style/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end" />
+
+        </LinearLayout>
+    </RelativeLayout>
 </RelativeLayout>

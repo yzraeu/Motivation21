@@ -108,7 +108,6 @@ public class WelcomeAdapter extends PagerAdapter {
         return v;
     }
 
-
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
 

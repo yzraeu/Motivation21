@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Motivation21</string>
+    <string name="welcome_phrase">O app que vai te ajudar a atingir suas metas em 21 dias!</string>
+    <string name="welcome_phrase2">Leia atentamente as dicas a seguir</string>
+    <string name="get_started_phrase">Agora vamos pra ação! Defina uma meta e vamos te ajudar atingir utilizando o <b>HÁBITO</b>.</string>
+    <string name="action_button">Iniciar</string>
+    <string name="coming_soon">Em breve...</string>
+
+
+    <string name="image_descrition">Autor da frase que ilustra o tópico atual</string>
+
+    <string name="title_1">Controle suas emoções&#8230;</string>
+    <string name="tip_1">Deixar as emoções controlarem sua vida é como sentar em um barco e deixar as ondas e as correntes te levarem para onde elas quiserem. Desenvolver sua força interna e auto-disciplina é como colocar um motor nesse barco. Você decide seus caminhos.</string>
+
+    <string name="title_2">Tempo é um bem valioso&#8230;</string>
+    <string name="tip_2">Trate seu tempo como dinheiro no banco, nunca desperdice, use-o corretamente. Todo dia que passa é como um débito da sua conta. Se você é cuidadoso com seu dinheiro, seja cuidadoso com seu tempo. Invista em algo que te ajude e adicione valor na sua vida.</string>
+
+    <string name="title_3">Mente sempre aberta&#8230;</string>
+    <string name="tip_3">Isso facilita o processo de enxergar novas oportunidades, conceber novas ideias, focar nas suas metas e ver as coisas de outro ponto de vista. Não tenha medo de mudanças.</string>
+
+    <string name="title_4">Adquira empatia&#8230;</string>
+    <string name="tip_4">Coloque-se na situação da outra pessoa. Entenda o que ela está passando através do ponto de vista dela. Imagine se todo o contexto da vida dela estivesse ao seu redor e como você agiria nessa situação.</string>
+
+    <string name="title_5">Crie o hábito&#8230;</string>
+    <string name="tip_5">O que você faz todo dia vira um hábito. Escolha hábitos que levem você ao sucesso e repita eles todo dia. Com o tempo eles vão ser automáticos, sem precisar pensar. Pense positivo, nunca se atrase, tenha mais força de vontade e sempre mantenha a calma.</string>
+
+    <string name="name_cameron">James Cameron</string>
+    <string name="phrase_cameron">Se você traçar metas absurdamente altas e falhar, seu fracasso será muito melhor que o sucesso de todos</string>
+
+    <string name="name_churchill">Winston Churchill</string>
+    <string name="phrase_churchill">Se você está atravessando um inferno, não pare</string>
+
+    <string name="name_jefferson">Thomas Jefferson</string>
+    <string name="phrase_jefferson">Descobri que, quanto mais eu trabalho, mais sorte eu pareço ter</string>
+
+    <string name="name_darwin">Charles Darwin</string>
+    <string name="phrase_darwin">Não é o mais forte nem o mais inteligente que sobrevive. É o mais disposto à mudança</string>
+
+    <string name="name_fitzgerald">F. Scott Fitzgerald</string>
+    <string name="phrase_fitzgerald">Quando você pensar em criticar alguém, apenas lembre que nem todas as pessoas do mundo tiveram os mesmos benefícios que você</string>
+
+</resources>

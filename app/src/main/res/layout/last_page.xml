@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.israel.motivation21.LastPageActivity">
+    tools:context="com.israel.motivation21.MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -26,6 +26,7 @@
         style="@style/start_button"
         android:layout_alignParentBottom="true"
         android:text="@string/action_button"
+        android:onClick="startAction"
         android:id="@+id/start_motivation_button" />
 
 </RelativeLayout>
